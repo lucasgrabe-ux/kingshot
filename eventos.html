@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía de Eventos - Dark Patato</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --bg-dark: #050403;
+            --primary-gold: #d4af37; 
+            --secondary-brown: #8b5a2b; 
+            --text-main: #ffffff;
+        }
+        body {
+            background-color: var(--bg-dark);
+            background-image: linear-gradient(rgba(5, 4, 3, 0.85), rgba(5, 4, 3, 0.95)), url('castillo.png');
+            background-size: cover;
+            background-attachment: fixed;
+            color: var(--text-main);
+            font-family: 'Montserrat', sans-serif;
+            padding: 20px;
+        }
+        .btn-back { display: inline-block; border: 1px solid var(--primary-gold); color: var(--primary-gold); padding: 10px 15px; border-radius: 8px; text-decoration: none; margin-bottom: 20px; }
+        .page-title { font-family: 'Cinzel', serif; color: var(--primary-gold); text-align: center; margin-bottom: 40px; text-transform: uppercase; letter-spacing: 2px; }
+        
+        .events-container { max-width: 500px; margin: 0 auto; }
+        .category-title { font-family: 'Cinzel', serif; color: var(--primary-gold); font-size: 22px; margin-bottom: 15px; text-align: center; border-bottom: 1px solid var(--secondary-brown); padding-bottom: 5px; }
+        
+        .event-list { list-style: none; margin-bottom: 40px; }
+        .event-item { padding: 10px; border-bottom: 1px solid rgba(139, 90, 43, 0.3); text-align: center; color: var(--text-main); }
+    </style>
+</head>
+<body>
+
+    <a href="index.html" class="btn-back"><i class="fa-solid fa-chevron-left"></i> Volver</a>
+    <h1 class="page-title">Guía de Eventos</h1>
+
+    <div class="events-container">
+        <!-- SOLO EVENTS -->
+        <h2 class="category-title">Solo Events</h2>
+        <ul class="event-list">
+            <li class="event-item">Hero Roulette</li>
+            <li class="event-item">Hall of Governors</li>
+            <li class="event-item">Fishing</li>
+            <li class="event-item">Arcane Trove</li>
+            <li class="event-item">Eternity's Reach</li>
+            <li class="event-item">Develop new tech</li>
+            <li class="event-item">Working Overtime</li>
+            <li class="event-item">Power Up</li>
+            <li class="event-item">Desert Trial</li>
+            <li class="event-item">Emporium of Enigma</li>
+            <li class="event-item">Plan your City</li>
+            <li class="event-item">War Preparation</li>
+            <li class="event-item">City Development</li>
+            <li class="event-item">All Out (Kill Event)</li>
+            <li class="event-item">Call of the Sovereign</li>
+            <li class="event-item">Beast Whisperer</li>
+            <li class="event-item">Kingdom Feast</li>
+        </ul>
+
+        <!-- ALLIANCE EVENTS -->
+        <h2 class="category-title">Alliance Events</h2>
+        <ul class="event-list">
+            <li class="event-item">Swordland Showdown</li>
+            <li class="event-item">Bear Hunt</li>
+            <li class="event-item">Alliance Mobilization</li>
+            <li class="event-item">Sanctuary Battles</li>
+            <li class="event-item">Viking Vengeance</li>
+            <li class="event-item">Cesares Fury</li>
+        </ul>
+    </div>
+</body>
+</html>
