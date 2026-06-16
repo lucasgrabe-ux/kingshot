@@ -19,13 +19,16 @@
             --text-main: #ffffff;
         }
 
-        /* Selector de idioma arriba a la derecha */
+        /* Selector de idioma flotante y corregido */
         #google_translate_element {
             position: fixed;
-            top: 10px;
-            right: 10px;
-            z-index: 1000;
+            top: 15px;
+            right: 15px;
+            z-index: 9999;
         }
+        /* Elimina espacios que Google Translate inyecta en el body */
+        body { top: 0 !important; }
+        .goog-te-banner-frame { display: none !important; }
 
         * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Cormorant Garamond', serif; }
 
